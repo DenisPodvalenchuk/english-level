@@ -14,7 +14,7 @@ df_words = pd.read_csv(r'C:\English_level\Oxford_dikt.csv')
 
 # Загрузка модели
 model = CatBoostClassifier()
-model.load_model('C:\English_level\english_level_model.cbm')
+model.load_model('https://github.com/DenisPodvalenchuk/english-level/blob/main/english_level_model.cbm')
 features = ['film_start', 'film_end', 'film_length', 'num_sentence', 'text_len', 'words_unique_count', 'A1', 'A2', 'B1', 'B2', 'C1']
 
 wnl = WordNetLemmatizer()
