@@ -4,3 +4,5 @@ numpy==1.23.1
 pandas==1.4.3
 pysrt==1.1.2
 streamlit==1.19.0
+textstat==0.7.3
+regex==2022.6.2
