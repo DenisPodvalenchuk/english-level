@@ -10,11 +10,11 @@ nltk.download('wordnet')
 
 st.title('Классификация фильмов по Common European Framework of Reference (CEFR) - системе уровней владения иностранным языком, используемой в Европейском Союз')
 
-df_words = pd.read_csv('english-level/Oxford_dikt.csv')
+df_words = pd.read_csv('english-level/app/Oxford_dikt.csv')
 
 # Загрузка модели
 model = CatBoostClassifier()
-model.load_model('english-level/english_level_model.cbm')
+model.load_model('english-level/app/english_level_model.cbm')
 features = ['film_start', 'film_end', 'film_length', 'num_sentence', 'text_len', 'words_unique_count', 'A1', 'A2', 'B1', 'B2', 'C1']
 
 wnl = WordNetLemmatizer()
