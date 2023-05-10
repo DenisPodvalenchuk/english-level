@@ -134,7 +134,6 @@ if uploaded_file is not None:
         # Получаем предсказание с использованием нового датафрейма
         prediction = make_predict(df_result, model)
         st.header(f'Данный фильм имеет уровень **{prediction}** :sunglasses: по классификации CEFR')
-
-# Выводим значения признаков для анализа
-st.write("Значения признаков:")
-st.write(df_result)
+        # Выводим значения признаков для анализа
+        st.write("Значения признаков:")
+        st.write(df_result)
