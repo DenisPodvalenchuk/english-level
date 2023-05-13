@@ -9,6 +9,14 @@ import nltk
 nltk.download('wordnet')
 
 st.title('Классификация фильмов по Common European Framework of Reference (CEFR) - системе уровней владения иностранным языком, используемой в Европейском Союз')
+st.text('В системе CEFR знания и умения учащихся подразделяются на три крупных категории,')
+st.text('которые далее делятся на шесть уровней:')
+st.text('A1 - Уровень Beginner (Начальный)')
+st.text('A2 - Уровень Elementary (Базовый)')
+st.text('B1 - Уровень Pre-Intermediate (Средний)')
+st.text('B2 - Уровень Upper-Intermediate (Выше среднего)')
+st.text('C1 - Уровень Advanced (Продвинутый)')
+st.text('C2 - Уровень Proficiency (Владение в совершенстве)')
 
 df_words = pd.read_csv('app/Oxford_dikt.csv')
 
